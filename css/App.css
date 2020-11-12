@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'Monotype Corsiva';
+  src: local('Monotype Corsiva'), url(./fonts/Monotype\ Corsiva.ttf) format('truetype');
+}
+
+html {
+  min-height: 100%;
+  overflow: auto;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100%;
+  overflow: auto;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: auto;
+  margin-top: 10px;
+  padding: 0;
+  overflow: hidden;
+  width: fit-content;
+}
+
+.nav-item {
+  float: left;
+}
+
+.nav-link {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+  color: black;
+  text-decoration: none;
+  font-size: 40px;
+  margin-left : 5px;
+  margin-right : 5px;
+}
+
+.background {
+  background-color: black;
+  min-height: 100%;
+  overflow: auto;
+}
+
+.content-background {
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  height: 100%;
+  overflow: auto;
+
+}
+
+#clouds {
+  display: inline-block;
+  width: 100%;
+}
+
+#image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 60px;
+  transform: translate(-50%, -50%);
+  font-family: "Monotype Corsiva"
+}
+
+#image-container {
+  position: relative;
+  text-align: center;
+}
+
+#root {
+  min-height: 100%;
+  overflow: auto;
+}
+
+.content {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.services {
+  display: inline-block;
+}
+
+#funeralSign {
+  width: 40%;
+  margin-left: 15%;
+}
+
+
