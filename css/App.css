@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Monotype Corsiva';
-  src: local('Monotype Corsiva'), url(/MonotypeCorsiva.ttf) format('truetype');
+  src: local('Monotype Corsiva'), url(/css/MonotypeCorsiva.ttf) format('truetype');
 }
 
 html {
