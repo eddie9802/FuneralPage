@@ -3,57 +3,68 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./css/App.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+                    var deviceType = "mobile";
+                } else {
+                    var deviceType = "desktop";
+                }
+                $("#contentBackground").addClass("content-background-" + deviceType);
+            });
+        </script>
     </head>
     <body>
         <div class="background">
-            <div class="content-background">
+            <div id="contentBackground">
                 <div class="content">
-                <div id="image-container">
-                <img src="./assets/blueSkies2.jpg" alt="" id="clouds"/>
-                <div id="image-text">
-                    Hamilton's Funeral Services
-                </div>
-                </div>
-                <h1 class="home">About us</h1>
-                <p>
-                    For almost 100 years now Hamilton's Funeral Service have served the surrounding area.
-        
-                    We are proud to say that we are one of the oldest established funeral undertaking firms in South Derry.
-        
-                    The business is presently under the management of Samuel Hamilton, grandson of the founder.
-                    Because we are a small firm we believe that in your time of need we can offer a personal and caring service from your first enquiry.
-                </p>
-                
-                <div class="services">
-                    <h1>Services</h1>
-                    <p>
-                        We offer a wide range of services including:
-                    </p>
-                    <ul>
-                        <li>24-hour call-out service 365 days a year</li>
-                        <li>Guidance and advice on making funeral arrangements</li>
-                        <li>Arrangement of press notices</li>
-                        <li>Printing of order of services sheets</li>
-                        <li>Handling of donations and liaising with relevant charities</li>
-                        <li>Home Visits / Out of Hours visits if preferred</li>
-                        <li>Funeral home</li>
-                        <li>Floral Tributes & Flower arrangements</li>
-                        <li>Pre-Payment plans available</li>
-                        <li>Funeral Catering</li>
-                    </ul>
+                    <div id="image-container">
+                        <img src="./assets/blueSkies2.jpg" alt="" id="clouds"/>
+                        <div id="image-text">
+                            Hamilton's Funeral Services
+                        </div>
                     </div>
-        
-                <img src="./assets/FuneralSign2.JPG" alt="" id="funeralSign"/>
-        
-                <h1 class="announcements">Death Announcements</h1>
-                <a href="https://www.funeraltimes.com">See all Death Announcements</a>
-        
-                <h1 class="contact">Contact us</h1>
-                <p>
-                    Email: ruthhamilton5@aol.com<br />
-                    Phone Number: 028 79386247<br />
-                    Address: 18 Deerpark Road Bellaghy
-                </p>
+                    <h1 class="home">About us</h1>
+                    <p>
+                        For almost 100 years now Hamilton's Funeral Service have served the surrounding area.
+            
+                        We are proud to say that we are one of the oldest established funeral undertaking firms in South Derry.
+            
+                        The business is presently under the management of Samuel Hamilton, grandson of the founder.
+                        Because we are a small firm we believe that in your time of need we can offer a personal and caring service from your first enquiry.
+                    </p>
+                    
+                    <div class="services">
+                        <h1>Services</h1>
+                        <p>
+                            We offer a wide range of services including:
+                        </p>
+                        <ul>
+                            <li>24-hour call-out service 365 days a year</li>
+                            <li>Guidance and advice on making funeral arrangements</li>
+                            <li>Arrangement of press notices</li>
+                            <li>Printing of order of services sheets</li>
+                            <li>Handling of donations and liaising with relevant charities</li>
+                            <li>Home Visits / Out of Hours visits if preferred</li>
+                            <li>Funeral home</li>
+                            <li>Floral Tributes & Flower arrangements</li>
+                            <li>Pre-Payment plans available</li>
+                            <li>Funeral Catering</li>
+                        </ul>
+                        </div>
+            
+                    <img src="./assets/FuneralSign2.JPG" alt="" id="funeralSign"/>
+            
+                    <h1 class="announcements">Death Announcements</h1>
+                    <a href="https://www.funeraltimes.com">See all Death Announcements</a>
+            
+                    <h1 class="contact">Contact us</h1>
+                    <p>
+                        Email: ruthhamilton5@aol.com<br />
+                        Phone Number: 028 79386247<br />
+                        Address: 18 Deerpark Road Bellaghy
+                    </p>
                 </div>
             </div>
         </div>

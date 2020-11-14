@@ -54,13 +54,21 @@ code {
   overflow: auto;
 }
 
-.content-background {
+.content-background-desktop {
   background-color: white;
   width: 80%;
   margin: auto;
   height: 100%;
   overflow: auto;
 
+}
+
+.content-background-mobile {
+  background-color: white;
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  overflow: auto;
 }
 
 #clouds {
