@@ -14,6 +14,26 @@
                 $("#contentBackground").addClass("content-background-" + deviceType);
             });
         </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhpeoT67MVMZrZqJfFiNOufNlTYqdP7nQ&callback=initMap&libraries=&v=weekly" defer></script>
+        <script>
+            // Initialize and add the map
+            function initMap() {
+              // The location of Uluru
+              const bellaghy= { lat: 54.8034772, lng: -6.5189381 };
+              // The map, centered at Uluru
+              const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 10,
+                center: bellaghy,
+              });
+              // The marker, positioned at Uluru
+              const marker = new google.maps.Marker({
+                position: bellaghy,
+                map: map,
+              });
+            }
+          </script>
+      
+  
     </head>
     <body>
         <div class="background">
@@ -53,9 +73,6 @@
                             <li>Funeral Catering</li>
                         </ul>
                         </div>
-            
-                    <img src="./assets/FuneralSign2.JPG" alt="" id="funeralSign"/>
-            
                     <h1 class="announcements">Death Announcements</h1>
                     <a href="https://www.funeraltimes.com">See all Death Announcements</a>
             
@@ -65,6 +82,8 @@
                         Phone Number: 028 79386247<br />
                         Address: 18 Deerpark Road Bellaghy
                     </p>
+                    <!--The div element for the map -->
+                    <div id="map"></div>
                 </div>
             </div>
         </div>
