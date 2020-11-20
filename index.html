@@ -4,8 +4,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./css/App.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- <style id="google-font-style">
+            @font-face {
+                font-family: 'Monotype Corsiva';
+                src: local('Monotype Corsiva'), url(/css/MonotypeCorsiva.ttf) format('truetype');
+            }
+        </style>
+        <style id="firefox-font-style">
+            @font-face {
+                font-family: 'Monotype Corsiva';
+                src: local('Monotype Corsiva'), url(/FuneralPage/css/MonotypeCorsiva.ttf) format('truetype');
+            }
+        </style> -->
         <script>
             $(document).ready(function() {
+                var sheet = document.createElement('style');
+                if(/Chrome/i.test(navigator.userAgent)){
+                    sheet.innerHTML = "@font-face { \
+                                        font-family: 'Monotype Corsiva'; \
+                                        src: local('Monotype Corsiva'), url(/css/MonotypeCorsiva.ttf) format('truetype'); \
+                                        }";
+                    document.body.appendChild(sheet);
+                } else {
+                    sheet.innerHTML = "@font-face {\
+                                        font-family: 'Monotype Corsiva';\
+                                        src: local('Monotype Corsiva'), url(/FuneralPage/css/MonotypeCorsiva.ttf) format('truetype');\
+                                        }";
+                    document.body.appendChild(sheet);
+                }
                 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
                     var deviceType = "mobile";
                 } else {
